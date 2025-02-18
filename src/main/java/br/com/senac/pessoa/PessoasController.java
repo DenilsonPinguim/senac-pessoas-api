@@ -42,7 +42,7 @@ public class PessoasController {
     @PutMapping("/{id}")
     public ResponseEntity<Pessoas> atualizarPessoa(@PathVariable Long id, @RequestBody Pessoas pessoa) throws Exception {
         try {
-            if(!pessoasRepositorio.existsById(id)) throw new Exception("Registro não encontrado!");
+            if(!pessoasRepositorio.existsById(id)) throw new Exception("Registro não encontrado! Novo");
 
             pessoa.setId(id);
             Pessoas pessoasResult = pessoasRepositorio.save(pessoa);
