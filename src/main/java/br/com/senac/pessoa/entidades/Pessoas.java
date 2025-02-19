@@ -1,4 +1,4 @@
-package br.com.senac.pessoa;
+package br.com.senac.pessoa.entidades;
 
 import jakarta.persistence.*;
 

@@ -1,5 +1,7 @@
-package br.com.senac.pessoa;
+package br.com.senac.pessoa.controllers;
 
+import br.com.senac.pessoa.entidades.Pessoas;
+import br.com.senac.pessoa.repositorios.PessoasRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
